@@ -33,7 +33,7 @@
 ↓
 📊 Получить итоги
 
-text
+
 
 ### Пошаговая инструкция
 
@@ -83,7 +83,7 @@ text
 
 ➡️ Подтвердить эту часть
 
-text
+
 
 ---
 
@@ -97,57 +97,6 @@ text
 | **Обработка изображений** | Pillow |
 | **Хостинг** | Railway |
 
----
-
-## 🚀 Быстрый старт для разработки
-
-### Локальный запуск
-
-```bash
-# Клонировать репозиторий
-git clone https://github.com/ваш-аккаунт/receipt-split-bot.git
-cd receipt-split-bot
-
-# Создать виртуальное окружение
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate   # Windows
-
-# Установить зависимости
-pip install -r requirements.txt
-
-# Создать файл с токенами
-echo "TELEGRAM_TOKEN=ваш_токен" > .env
-echo "GEMINI_API_KEY=ваш_ключ" >> .env
-
-# Запустить бота
-python main.py
-Переменные окружения
-Переменная	Описание
-TELEGRAM_TOKEN	Токен бота от @BotFather
-GEMINI_API_KEY	API ключ от Google AI Studio
-☁️ Деплой на Railway
-Залейте код на GitHub
-
-bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/ваш-аккаунт/receipt-split-bot.git
-git push -u origin main
-В Railway
-
-New Project → Deploy from GitHub repo
-
-Выберите ваш репозиторий
-
-Добавьте переменные окружения
-
-TELEGRAM_TOKEN = ваш токен
-
-GEMINI_API_KEY = ваш ключ
-
-Готово! Бот запущен и работает 24/7
 
 📁 Структура проекта
 text
@@ -189,5 +138,4 @@ python-telegram-bot — за отличный фреймворк
 
 Railway — за удобный хостинг
 
-📞 Контакты
-По вопросам и предложениям: @ваш_телеграм
+
