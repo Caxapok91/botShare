@@ -17,14 +17,14 @@ import google.generativeai as genai
 
 
 # ===== КОНФИГУРАЦИЯ =====
-try:
-    import tok
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-    TELEGRAM_TOKEN = tok.TELEGRAM_TOKEN
-    GEMINI_API_KEY = tok.gem_api
-except ImportError:
-    TELEGRAM_TOKEN = "ВАШ_ТОКЕН_BOTFATHER"
-    GEMINI_API_KEY = "ВАШ_КЛЮЧ_GEMINI"
+# Проверка, что токены заданы
+if not TELEGRAM_TOKEN:
+    raise ValueError("TELEGRAM_TOKEN не задан! Установите переменную окружения.")
+if not GEMINI_API_KEY:
+    raise ValueError("GEMINI_API_KEY не задан! Установите переменную окружения.")
 
 TELEGRAM_CHANNEL_ID = "-1003352192902"  # ID вашего канала для логов
 
