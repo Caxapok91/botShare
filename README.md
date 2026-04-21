@@ -92,7 +92,6 @@
 
 
 📁 Структура проекта
-text
 receipt-split-bot/
 ├── main.py              # Основной код бота
 ├── requirements.txt     # Зависимости
